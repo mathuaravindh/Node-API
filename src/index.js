@@ -74,7 +74,7 @@ app.listen(port, () => {
 })
 
 const getConn = async () => {
-    await sql.connect('Server=misql-xm-cascade-dev-cus.331c5123c6d7.database.windows.net;Database=CascadeTransactions;User Id=REOUser;Password=Solut10nSt@r;Encrypt=true');
+    await sql.connect('connstring');
     return sql;
 }
 
